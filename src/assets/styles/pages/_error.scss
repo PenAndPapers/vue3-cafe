@@ -1,0 +1,23 @@
+@import '../variables';
+
+.error {
+  > div {
+    margin: 6rem 1rem;
+  }
+  h1, h5, p {
+    text-align: center;
+    font-family: $spline-sans;
+  }
+  h1 {
+    font-size: 8rem;
+    color: $green-800;
+  }
+  h5 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}

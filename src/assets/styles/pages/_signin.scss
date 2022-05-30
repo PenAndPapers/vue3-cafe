@@ -1,0 +1,65 @@
+@import '../variables';
+
+.sign-in {
+  .form-container {
+    display: block;
+    margin: 2rem auto;
+    width: 560px;
+    padding: 4rem 3rem;
+    border-radius: .5rem;
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    form {
+      margin-top: 3rem;
+      .field {
+        margin-bottom: 1.25rem;
+        a {
+          color: $green-800;
+          font-weight: 700;
+        }
+      }
+      label {
+        display: inline-block;
+        margin-bottom: .25rem;
+        sup {
+          color: $red-700;
+        }
+      }
+      input {
+        width: 100%;
+        padding: .5rem 1rem;
+        border: 1px solid $black-800;
+        border-radius: .5rem;
+        font-size: 1.25rem;
+        &[type=checkbox] {
+          display: inline-block;
+          width: auto;
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: .5rem;
+        }
+        &:hover, &.active, &:focus {
+          border: 1px solid $green-800;
+        }
+      }
+      button {
+        width: 100%;
+        margin-top: 2rem;
+        padding: .5rem 1rem;
+        border: none;
+        border-radius: .5rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        background: $green-800;
+        color: $white;
+        cursor: pointer;
+        &:hover {
+          background: $green-700;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../variables';
+
+.home {
+  .promo {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+    &.green {
+      background: $green-400;
+    }
+    &.orange {
+      background: $orange-400;
+    }
+    &.red {
+      background: $red-400;
+    }
+    &.yellow {
+      background: $yellow-400;
+    }
+    .details {
+      flex: 1;
+      h3 {
+        margin-bottom: 2.5rem;
+        padding: 0 2rem;
+        font-size: 3.25rem;
+        font-weight: 700;
+        font-family: $spline-sans;
+      }
+      p {
+        margin-bottom: 2rem;
+        padding: 0 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+    .preview {
+      position: relative;
+      height: 700px;
+      flex: 1;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+    }
+  }
+  
+  .notification {
+    display: block;
+    margin: 2rem auto 0;
+    max-width: 520px;
+    p {
+      font-size: .75rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+  }
+}

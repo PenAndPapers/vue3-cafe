@@ -1,0 +1,50 @@
+@import '../variables';
+
+.news-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0 0;
+  background: $green-600;
+  padding: 6rem 1rem;
+  div {
+    max-width: 600px;
+    h3, p {
+      text-align: center;
+      color: $white;
+    }
+    h3 {
+      font-size: 3rem;
+      font-family: $caveat;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-family: $spline-sans;
+    }
+    form {
+      display: flex;
+      margin: 2rem auto 0;
+      input {
+        flex: 1;
+        height: 3rem;
+        padding: 0px 1rem;
+        font-size: 1.25rem;
+        border: none;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        inset: none;
+      }
+      button {
+        width: 170px;
+        height: 3rem;
+        font-size: 1.25rem;
+        background: $black-700;
+        color: $white;
+        border: none;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+      }
+    }
+  }
+}

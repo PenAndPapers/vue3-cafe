@@ -1,0 +1,104 @@
+@import '../variables';
+
+.menu {
+  display: flex;
+  aside {
+    margin-right: 3rem;
+    nav {
+      margin-bottom: 2.5rem;
+      h4 {
+        margin-bottom: 1.25rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      a {
+        display: block;
+        padding: .5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: $spline-sans;
+        text-decoration: none;
+        color: $green-900;
+        &:hover {
+          color: $green-900;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  .products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3rem;
+    figure {
+      position: relative;
+      height: 100%;
+      min-height: 350px;
+      border-radius: 1rem;
+      overflow: hidden;
+      cursor: pointer;
+      background: $green-800;
+      transition: all 0.25s ease;
+      &:hover {
+        -webkit-box-shadow: 0px 15px 25px -10px rgba(190,190,190,1);
+        -moz-box-shadow: 0px 15px 25px -10px rgba(190,190,190,1);
+        box-shadow: 0px 15px 25px -10px rgba(190,190,190,1);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: 50% 50%;
+        z-index: 0;
+      }
+      div {
+        width: 100%;
+        min-height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        z-index: 1;
+        background: rgb(1,1,1,0.6);
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          font-weight: 500;
+          font-family: $spline-sans;
+          text-align: center;
+          color: $white;
+          i {
+            font-size: 1.5rem;
+            color: $white;
+          }
+          &.add-to-order {
+            display: none;
+          }
+        }
+      }
+      &:hover {
+        div {
+          span {
+            &.name {
+              display: none;
+            }
+            &.add-to-order {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

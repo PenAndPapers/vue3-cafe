@@ -1,0 +1,165 @@
+@import '../variables';
+
+.rewards {
+  margin-top: -4rem;
+  border-top: 1px solid $black-300;
+  .banner {
+    min-height: 550px;
+    position: relative;
+    background: $green-800;
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      animation: fadeOut 1s;
+      -webkit-animation: fadeOut 1s;
+      -moz-animation: fadeOut 1s;
+      -o-animation: fadeOut 1s;
+      -ms-animation: fadeOut 1s;
+      &.show {
+        opacity: 1;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        -ms-animation: fadeIn 1s;
+      }
+      h2 {
+        font-size: 5.5rem;
+        font-family: $caveat;
+        font-weight: 700;
+        color: $black-100;
+        text-shadow: -2px 4px 0px $black;
+      }
+    }
+  }
+  .mechanics {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+    article {
+      text-align: center;
+      .circle {
+        margin: 0 auto;
+        height: 6rem;
+        width: 6rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $green-600;
+        i {
+          font-size: 3rem;
+          color: $black-100;
+        }
+      }
+      h3 {
+        margin: 2rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: $spline-sans;
+        color: $black-900;
+      }
+      p {
+        font-size:.875rem;
+        line-height: 1.25rem;
+        color: $black-500;
+      }
+    }
+  }
+  .steps {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid $black-200;
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1.75rem;
+      text-align: center;
+      font-weight: 600;
+      font-family: $spline-sans;
+      color: $black-900;
+    }
+    p {
+      text-align: center;
+      color: $black-500;
+    }
+    ul {
+      max-width: 70%;
+      margin: 0 auto;
+      li {
+        margin-top: 4rem;
+        text-align: center;
+        i {
+          display: block;
+          margin-bottom: 2rem;
+          font-size: 6rem;
+          color: $black-900;
+        }
+        p {
+          font-size:.875rem;
+          line-height: 1.25rem;
+          color: $black-500;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-ms-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
